@@ -1,0 +1,17 @@
+.btn-primary {
+  font-family: "Noto Sans", sans-serif;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  max-width: 394px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: $white;
+  font-weight: 600;
+  padding: 1em 3em;
+  background-color: $main-color;
+  @include transitionBtn;
+  &:hover {
+    @include hoverBtn;
+  }
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>TipCash</title>
+  </head>
+  <body>
+    <div class="pages">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header-logo" href="/"
+              ><img src="../images/sprite.svg#logo" alt="logo"
+            /></a>
+      
+            <nav class="header-nav">
+              <button class="header-nav__close-btn">
+                <img src="../images/exit.svg" alt="close" />
+              </button>
+      
+              <form>
+                <button
+                  formaction="https://tipcash.ge/app/signin"
+                  class="header-nav__user-btn"
+                >
+                  <span class="header-nav__user-btn-text">Вход/Регистрация</span>
+                </button>
+              </form>
+              <a href="#spheres">Для кого сервис</a>
+              <a href="#howwork">Как это работает</a>
+              <a href="#info">Макеты с QR-кодом</a>
+              <a href="#faq">Часто задаваемые вопросы</a>
+              <h2 class="header-nav__logo">
+                <img src="../images/logo-mobile.svg" alt="Logo" />
+              </h2>
+            </nav>
+      
+            <button class="header-burger">
+              <img class="header-btn__icon" src="../images/burger.svg" alt="menu" />
+            </button>
+      
+            <form>
+              <button formaction="https://tipcash.ge/app/signin" class="header-btn">
+                <img class="header-btn__icon" src="../images/user.svg" alt="user" />
+                <span class="header-btn__text">Вход/Регистрация</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      
+      <main class="main">
+        <div class="banner">
+          <div class="container">
+            <div class="banner__inner">
+              <div class="banner-desc">
+                <h1 class="banner-desc-title">
+                  Безналичные переводы чаевых и донатов
+                </h1>
+                <p class="banner-desc-text">
+                  Макеты для печати с вашими данными и QR-кодом. Аналитика
+                  поступлений в удобных графиках и таблицах. Все необходимые
+                  оповещения в Телеграмм-боте сервиса.
+                </p>
+                <form>
+                  <button formaction="https://tipcash.ge/app/signin" class="btn-primary">
+                    Начать получать чаевые
+                  </button>
+                  
+                </form>
+              </div>
+              <picture class="banner-img">
+                <source srcset="../images/non-cash.webp" type="image/webp" />
+                <source srcset="../images/non-cash.avif" type="image/avif" />
+                <img src="../images/non-cash.png" alt="Non Cash" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages">
+          <div class="container">
+            <div class="advantages__inner">
+              <div class="card">
+                <div class="card-desc">
+                  <h2 class="card-desc-title">+20% поступлений</h2>
+                  <p class="card-desc-text">
+                    Многим клиентам удобней переводить чаевые онлайн
+                  </p>
+                </div>
+                <picture class="card-img">
+                  <source srcset="../images/transfer.webp" type="image/webp" />
+                  <source srcset="../images/transfer.avif" type="image/avif" />
+                  <img src="../images/transfer.png" alt="Transfer" />
+                </picture>
+              </div>
+              
+              <div class="card">
+                <div class="card-desc">
+                  <h2 class="card-desc-title">Деньги сразу на карту</h2>
+                  <p class="card-desc-text">
+                    Сервис обеспечивает перевод денег на счет получателя, а не хранит их
+                  </p>
+                </div>
+                <picture class="card-img">
+                  <source srcset="../images/bank-card.webp" type="image/webp" />
+                  <source srcset="../images/bank-card.avif" type="image/avif" />
+                  <img src="../images/bank-card.png" alt="Bank card" />
+                </picture>
+              </div>
+              
+              <div class="card">
+                <div class="card-desc">
+                  <h2 class="card-desc-title">Без налогов</h2>
+                  <p class="card-desc-text">
+                    Чаевые и донаты считаются подарком и не облагаются налогами
+                  </p>
+                </div>
+                <picture class="card-img">
+                  <source srcset="../images/taxes.webp" type="image/webp" />
+                  <source srcset="../images/taxes.avif" type="image/avif" />
+                  <img src="../images/taxes.png" alt="Taxes" />
+                </picture>
+              </div>
+              
+              <div class="card">
+                <div class="card-desc">
+                  <h2 class="card-desc-title">Визитки бесплатно</h2>
+                  <p class="card-desc-text">Подарим пробные визитки для быстрого старта</p>
+                </div>
+                <picture class="card-img">
+                  <source srcset="../images/business-cards.webp" type="image/webp" />
+                  <source srcset="../images/business-cards.avif" type="image/avif" />
+                  <img src="../images/business-cards.png" alt="Business-cards" />
+                </picture>
+              </div>
+              
+              <div class="card">
+                <div class="card-desc">
+                  <h2 class="card-desc-title">Без абонентской платы</h2>
+                  <p class="card-desc-text">Мы не берем платы за использование сервиса</p>
+                </div>
+                <picture class="card-img">
+                  <source srcset="../images/subscription-fee.webp" type="image/webp" />
+                  <source srcset="../images/subscription-fee.avif" type="image/avif" />
+                  <img src="../images/subscription-fee.png" alt="Subscription-fee" />
+                </picture>
+              </div>
+              
+              <div class="card">
+                <div class="card-desc">
+                  <h2 class="card-desc-title">Без комиссии</h2>
+                  <p class="card-desc-text">Комиссию оплачивает ваш клиент</p>
+                </div>
+                <picture class="card-img">
+                  <source srcset="../images/commission.webp" type="image/webp" />
+                  <source srcset="../images/commission.avif" type="image/avif" />
+                  <img src="../images/commission.png" alt="Commission" />
+                </picture>
+              </div>
+              
+            </div>
+            <form class="advantages-btn">
+              <button formaction="https://tipcash.ge/app/signin" class="btn-primary">
+                Начать получать чаевые
+              </button>
+              
+            </form>
+          </div>
+        </div>
+
+        <section class="spheres">
+          <div class="container">
+            <div class="spheres__inner">
+              <h2 id="spheres" class="spheres-title">
+                Сервис подходит для сбора чаевых и донатов в различных сферах
+              </h2>
+              <div class="spheres-items">
+                <div class="spheres-item">
+                  <img
+                    class="spheres-item-icon"
+                    src="../images/sprite.svg#barmans"
+                    alt="barmans"
+                  />
+                
+                  <h2 class="spheres-item-title">Официанты, бармены и бариста</h2>
+                  <p class="spheres-item-text">
+                    Гости смогут оставить вам чаевые отсканировав QR-код на визитке или
+                    тейбл-тенте
+                  </p>
+                  <a class="spheres-item-link" href="/">
+                    <img
+                      src="../images/sprite.svg#arrow"
+                      class="spheres-item-link__icon"
+                      alt="arrow"
+                  /></a>
+                </div>
+                
+                <div class="spheres-item">
+                  <img
+                    class="spheres-item-icon"
+                    src="../images/sprite.svg#beauty-masters"
+                    alt="barmans"
+                  />
+                
+                  <h2 class="spheres-item-title">Бьюти-мастера, косметологи и массажисты</h2>
+                  <p class="spheres-item-text">
+                    Ваши клиенты смогут поблагодарить вас отсканировав QR-код с наклейки или
+                    визитки
+                  </p>
+                  <a class="spheres-item-link" href="/">
+                    <img
+                      src="../images/sprite.svg#arrow"
+                      class="spheres-item-link__icon"
+                      alt="arrow"
+                  /></a>
+                </div>
+                
+                <div class="spheres-item">
+                  <img
+                    class="spheres-item-icon"
+                    src="../images/sprite.svg#artists"
+                    alt="artists"
+                  />
+                
+                  <h2 class="spheres-item-title">Артисты, стримеры и музыканты</h2>
+                  <p class="spheres-item-text">
+                    Фанаты и поклонники смогут поддержать вас материально перейдя по ссылке в
+                    ваших аккаунтах
+                  </p>
+                  <a class="spheres-item-link" href="/">
+                    <img
+                      src="../images/sprite.svg#arrow"
+                      class="spheres-item-link__icon"
+                      alt="arrow"
+                  /></a>
+                </div>
+                
+                <div class="spheres-item">
+                  <img
+                    class="spheres-item-icon"
+                    src="../images/sprite.svg#couriers"
+                    alt="couriers"
+                  />
+                
+                  <h2 class="spheres-item-title">Курьеры, доставщики и водители</h2>
+                  <p class="spheres-item-text">
+                    Прилагайте визитки с QR-кодом к доставленным посылкам или размещайте в
+                    салоне своего транспорта
+                  </p>
+                  <a class="spheres-item-link" href="/">
+                    <img
+                      src="../images/sprite.svg#arrow"
+                      class="spheres-item-link__icon"
+                      alt="arrow"
+                  /></a>
+                </div>
+                
+                <div class="spheres-item">
+                  <img
+                    class="spheres-item-icon"
+                    src="../images/sprite.svg#foremans"
+                    alt="foremans"
+                  />
+                
+                  <h2 class="spheres-item-title">Курьеры, доставщики и водители</h2>
+                  <p class="spheres-item-text">
+                    Прилагайте визитки с QR-кодом к доставленным посылкам или размещайте в
+                    салоне своего транспорта
+                  </p>
+                  <a class="spheres-item-link" href="/">
+                    <img
+                      src="../images/sprite.svg#arrow"
+                      class="spheres-item-link__icon"
+                      alt="arrow"
+                  /></a>
+                </div>
+                
+                <div class="spheres-item">
+                  <img
+                    class="spheres-item-icon"
+                    src="../images/sprite.svg#coaches"
+                    alt="coaches"
+                  />
+                
+                  <h2 class="spheres-item-title">Тренеры, коучи и преподаватели</h2>
+                  <p class="spheres-item-text">
+                    Благодарные ученики смогут перевести вам донаты или чаевые используя
+                    распечатанные макеты с QR- кодом
+                  </p>
+                  <a class="spheres-item-link" href="/">
+                    <img
+                      src="../images/sprite.svg#arrow"
+                      class="spheres-item-link__icon"
+                      alt="arrow"
+                  /></a>
+                </div>
+                
+              </div>
+              <form>
+                <button formaction="https://tipcash.ge/app/signin" class="btn-primary">
+                  Начать получать чаевые
+                </button>
+                
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="how-work">
+          <div class="container">
+            <div class="how-work__inner">
+              <h2 id="howwork" class="how-work-title">Как это работает</h2>
+              <div class="how-work-items">
+                <div class="how-work-item">
+                  <h2 class="how-work-item-step">1.</h2>
+                  <picture class="how-work-item-img">
+                    <source srcset="../images/step1.webp" type="image/webp" />
+                    <source srcset="../images/step1.avif" type="images/avif" />
+                    <img src="../images/step1.png" alt="step 1" />
+                  </picture>
+                  <p class="how-work-item-text">
+                    Зарегистрируйтесь на сайте и настройте свою профессиональную страницу с
+                    QR-кодом
+                  </p>
+                </div>
+                
+                <div class="how-work-item">
+                  <h2 class="how-work-item-step">2.</h2>
+                  <picture class="how-work-item-img">
+                    <source srcset="../images/step2.webp" type="image/webp" />
+                    <source srcset="../images/step2.avif" type="images/avif" />
+                    <img src="../images/step2.png" alt="step 2" />
+                  </picture>
+                  <p class="how-work-item-text">
+                    Дайте отсканировать QR-код клиенту на смартфоне, визитке или пришлите ему
+                    ссылку
+                  </p>
+                </div>
+                
+                <div class="how-work-item">
+                  <h2 class="how-work-item-step">3.</h2>
+                  <picture class="how-work-item-img">
+                    <source srcset="../images/step3.webp" type="image/webp" />
+                    <source srcset="../images/step3.avif" type="images/avif" />
+                    <img src="../images/step3.png" alt="step 3" />
+                  </picture>
+                  <p class="how-work-item-text">
+                    Клиент выбирает сумму чаевых и подтверждает перевод
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="how-work-btn">
+              <button formaction="https://tipcash.ge/app/signin" class="btn-primary">
+                Начать получать чаевые
+              </button>
+              
+            </div>
+          </div>
+        </section>
+
+        <div class="info">
+          <div class="container">
+            <div class="info__inner">
+              <div class="info-item">
+                <picture class="info-item-img">
+                  <source srcset="../images/qr-code.webp" type="image/webp" />
+                  <source srcset="../images/qr-code.avif" type="image/avif" />
+                  <img src="../images/qr-code.png" alt="qr-code" />
+                </picture>
+              
+                <div class="info-item-desc">
+                  <h2 id="info" class="info-item-desc__title">QR-код там где это удобно</h2>
+                  <p class="info-item-desc__text">
+                    В личном кабине можно скачать макеты для печати в типографии визиток,
+                    тейбл-тентов, наклеек и других носителей с вашим QR-кодом. Выбор
+                    POS-материалов зависит от вашей сферы деятельности.
+                  </p>
+                  <p class="info-item-desc__text">
+                    Кроме печатных и цифровых материалов вы можете размещать ссылки на
+                    страницы чаевых в своих соцсетях, интегрировать кнопки благодарности на
+                    свой сайт и личные страницы
+                  </p>
+                </div>
+              </div>
+              
+              <div class="info-item lavender">
+                <picture class="info-item-img">
+                  <source srcset="../images/for-business.webp" type="image/webp" />
+                  <source srcset="../images/for-business.avif" type="image/avif" />
+                  <img src="../images/for-business.png" alt="for-business" />
+                </picture>
+                <div class="info-item-desc">
+                  <h2 class="info-item-desc__title">Для бизнеса</h2>
+                  <ul class="info-item-desc__list">
+                    <li>
+                      Сервис не взимает абонентской платы и является бесплатным для бизнеса и
+                      сотрудников
+                    </li>
+                    <li>
+                      Персональный менеджер для вашего бизнеса и техподдержка пользователей
+                    </li>
+                    <li>Бесплатные POS-материалы для комфортного старта бизнеса</li>
+                    <li>
+                      Статистика и аналитика поступлений чаевых по сотрудникам и управление
+                      командами
+                    </li>
+                    <li>
+                      Контроль качества работы сотрудников через отзывы и оценки клиентов
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="info-item light-cyan">
+                <picture class="info-item-img">
+                  <source srcset="../images/telegram-info.webp" type="image/webp" />
+                  <source srcset="../images/telegram-info.avif" type="image/avif" />
+                  <img src="../images/telegram-info.png" alt="telegram-info" />
+                </picture>
+              
+                <div class="info-item-desc">
+                  <h2 class="info-item-desc__title">Если вам привычней Telegram</h2>
+                  <p class="info-item-desc__text">
+                    С помощью нашего бота вы сможете получать всю необходимую информацию и
+                    оповещения прямо в мессенджере: узнавать баланс счета, получать информацию
+                    о поступлениях, быстро получать ссылки на свои QR-коды, запрашивать
+                    информацию о своих командах и многое другое
+                  </p>
+                </div>
+              </div>
+              
+              <form class="info-btn">
+                <button formaction="https://tipcash.ge/app/signin" class="btn-primary">
+                  Начать получать чаевые
+                </button>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <section class="faq">
+          <div class="container">
+            <div class="faq__inner">
+              <h2 id="faq" class="faq-title">Часто задаваемые вопросы</h2>
+              <div class="faq-links">
+                <a href="/" class="faq-link active">Клиент</a>
+                <a href="/" class="faq-link">Пользователь</a>
+                <a href="/" class="faq-link">Администратор</a>
+              </div>
+              
+              <div class="faq-accordion">
+                <div class="faq-accordion-item">
+                  <div class="faq-accordion-item__content">
+                    <header>
+                      <span class="faq-accordion-item__title">
+                        Как перевести чаевые по QR-коду?
+                      </span>
+                      <img
+                        class="faq-accordion-item__icon"
+                        src="../images/faq-plus.svg"
+                        alt="plus"
+                      />
+                    </header>
+              
+                    <div class="faq-accordion-item__panel">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sed
+                      iusto corrupti consequatur tenetur, nobis ab aliquid quia temporibus
+                      molestias, corporis dolorem iste sint minima enim deserunt eius!
+                      Molestiae, accusantium.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="faq-accordion-item">
+                  <div class="faq-accordion-item__content">
+                    <header>
+                      <span class="faq-accordion-item__title">
+                        Как отсканировать QR-код на визитке или чеке?
+                      </span>
+                      <img
+                        class="faq-accordion-item__icon"
+                        src="../images/faq-plus.svg"
+                        alt="plus"
+                      />
+                    </header>
+              
+                    <div class="faq-accordion-item__panel">Lorem ipsum</div>
+                  </div>
+                </div>
+              
+                <div class="faq-accordion-item">
+                  <div class="faq-accordion-item__content">
+                    <header>
+                      <span class="faq-accordion-item__title">
+                        Какие способы оплаты существуют?
+                      </span>
+                      <img
+                        class="faq-accordion-item__icon"
+                        src="../images/faq-plus.svg"
+                        alt="plus"
+                      />
+                    </header>
+              
+                    <div class="faq-accordion-item__panel">Lorem ipsum</div>
+                  </div>
+                </div>
+              
+                <div class="faq-accordion-item">
+                  <div class="faq-accordion-item__content">
+                    <header>
+                      <span class="faq-accordion-item__title"
+                        >Сохраняют ли данные моей карты?</span
+                      >
+                      <img
+                        class="faq-accordion-item__icon"
+                        src="../images/faq-plus.svg"
+                        alt="plus"
+                      />
+                    </header>
+              
+                    <div class="faq-accordion-item__panel">Lorem ipsum</div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <section class="promotions">
+            <div class="promotions__inner">
+              <h2 class="promotions-title">
+                Зарегистрируйтесь и получите визитки QR-кодом
+                <span>бесплатно</span>
+              </h2>
+
+              <div class="promotions-timer">
+
+                <h3 class="promotions-timer__title">До конца действия акции осталось:</h3>
+
+                <div class="promotions-timer__time-items time-count__items">
+
+                  <div class="time-count__item">
+
+                    <div class="time-count__value time-count__hours">23</div>
+
+                    <span class="time-count__text" data-hours>часы</span>
+
+                  </div>
+
+                  <div class="time-count__divider">:</div>
+
+                  <div class="time-count__item">
+
+                    <div class="time-count__value time-count__minutes">59</div>
+
+                    <span class="time-count__text" data-minutes>минуты</span>
+
+                  </div>
+
+                  <div class="time-count__divider">:</div>
+
+                  <div class="time-count__item">
+
+                    <div class="time-count__value time-count__seconds">48</div>
+
+                    <span class="time-count__text" data-seconds>секунды</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              
+              <div class="promotions-call">
+                <form class="promotions-call__form">
+                  <input
+                    class="promotions-call__form-input"
+                    data-tel-input
+                    type="tel"
+                    placeholder="+7 (_ _ _) _ _ _  _ _  _ _"
+                  />
+                  <button class="promotions-call__form-btn">Далее</button>
+                </form>
+              </div>
+            </div>
+            <img
+              class="promotions-img"
+              src="../images/footer-bg.png"
+              alt="bottom img"
+            />
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer-links">
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="footer-presentation">
+              <a href="">Презентация.pdf</a>
+              <a href="/"
+                ><img
+                  class="footer-presentation__logo"
+                  src="../images/sprite.svg#logo"
+                  alt="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    </div>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>

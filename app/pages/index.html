@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>TipCash</title>
+  </head>
+  <body>
+    <div class="pages">
+      <!--=include header.html -->
+      <main class="main">
+        <div class="banner">
+          <div class="container">
+            <div class="banner__inner">
+              <div class="banner-desc">
+                <h1 class="banner-desc-title">
+                  Безналичные переводы чаевых и донатов
+                </h1>
+                <p class="banner-desc-text">
+                  Макеты для печати с вашими данными и QR-кодом. Аналитика
+                  поступлений в удобных графиках и таблицах. Все необходимые
+                  оповещения в Телеграмм-боте сервиса.
+                </p>
+                <form>
+                  <!--=include button.html -->
+                </form>
+              </div>
+              <picture class="banner-img">
+                <source srcset="../images/non-cash.webp" type="image/webp" />
+                <source srcset="../images/non-cash.avif" type="image/avif" />
+                <img src="../images/non-cash.png" alt="Non Cash" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages">
+          <div class="container">
+            <div class="advantages__inner">
+              <!--=include cards.html -->
+            </div>
+            <form class="advantages-btn">
+              <!--=include button.html -->
+            </form>
+          </div>
+        </div>
+
+        <section class="spheres">
+          <div class="container">
+            <div class="spheres__inner">
+              <h2 id="spheres" class="spheres-title">
+                Сервис подходит для сбора чаевых и донатов в различных сферах
+              </h2>
+              <div class="spheres-items">
+                <!--=include spheres.html -->
+              </div>
+              <form>
+                <!--=include button.html -->
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="how-work">
+          <div class="container">
+            <div class="how-work__inner">
+              <h2 id="howwork" class="how-work-title">Как это работает</h2>
+              <div class="how-work-items">
+                <!--=include howwork.html -->
+              </div>
+            </div>
+            <div class="how-work-btn">
+              <!--=include button.html -->
+            </div>
+          </div>
+        </section>
+
+        <div class="info">
+          <div class="container">
+            <div class="info__inner">
+              <!--=include info.html -->
+              <form class="info-btn">
+                <!--=include button.html -->
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <section class="faq">
+          <div class="container">
+            <div class="faq__inner">
+              <h2 id="faq" class="faq-title">Часто задаваемые вопросы</h2>
+              <!--=include accordion.html -->
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <section class="promotions">
+            <div class="promotions__inner">
+              <h2 class="promotions-title">
+                Зарегистрируйтесь и получите визитки QR-кодом
+                <span>бесплатно</span>
+              </h2>
+
+              <!--=include timer.html -->
+              <div class="promotions-call">
+                <form class="promotions-call__form">
+                  <input
+                    class="promotions-call__form-input"
+                    data-tel-input
+                    type="tel"
+                    placeholder="+7 (_ _ _) _ _ _  _ _  _ _"
+                  />
+                  <button class="promotions-call__form-btn">Далее</button>
+                </form>
+              </div>
+            </div>
+            <img
+              class="promotions-img"
+              src="../images/footer-bg.png"
+              alt="bottom img"
+            />
+          </section>
+        </div>
+      </main>
+      <!--=include footer.html -->
+    </div>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>

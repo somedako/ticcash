@@ -1,0 +1,28 @@
+@mixin transitionBtn {
+  transition: background 0.2s linear;
+}
+
+@mixin transitionLink {
+  transition: color 0.2s linear;
+}
+
+@mixin hoverBtnFaq {
+  background: #d5d8e7;
+}
+
+@mixin hoverBtn {
+  background: #44259d;
+}
+
+@mixin hoverLink {
+  color: #44259d;
+}
+
+@mixin transitionBgandColor {
+  transition: background 0.2s linear, color 0.2s linear;
+}
+
+@mixin hoverBgandcolor {
+  color: $white;
+  background: #44259d;
+}

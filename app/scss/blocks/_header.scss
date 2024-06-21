@@ -1,0 +1,80 @@
+.header {
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 112px;
+    gap: 55px;
+    padding: 2em 0;
+  }
+
+  &-logo {
+    width: 183px;
+  }
+
+  &-nav {
+    display: flex;
+    transition: transform 0.5s linear, visibility 0.5s linear;
+
+    gap: 30px;
+
+    &__logo {
+      display: none;
+    }
+
+    &__close-btn {
+      display: none;
+      margin-right: auto;
+    }
+
+    &__user-btn {
+      display: none;
+      margin-right: auto;
+      font-family: "Noto Sans SemiBold", sans-serif;
+      font-size: 0.9rem;
+      color: $main-color;
+
+      &-icon {
+        display: none;
+        vertical-align: middle;
+      }
+    }
+
+    a {
+      font-family: "Noto Sans SemiBold", sans-serif;
+      color: $main-color;
+      @include transitionLink;
+      &:hover {
+        @include hoverLink;
+      }
+    }
+  }
+
+  &-burger {
+    display: none;
+  }
+
+  &-btn {
+    font-size: 0.9rem;
+    font-family: "Noto Sans SemiBold", sans-serif;
+    color: $main-color;
+
+    &__icon {
+      margin-right: 0.6em;
+      position: relative;
+      top: 3px;
+    }
+    &__text {
+      vertical-align: super;
+      text-wrap: nowrap;
+      font-size: 0.9rem;
+      @include transitionLink;
+      &:hover {
+        @include hoverLink;
+      }
+    }
+  }
+}

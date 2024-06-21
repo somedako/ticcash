@@ -1,0 +1,48 @@
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.6em;
+    align-items: center;
+  }
+
+  &-links {
+    display: flex;
+    gap: 50px;
+
+    a {
+      font-family: "Noto Sans SemiBold", sans-serif;
+      color: $main-color;
+      font-size: 0.9em;
+      line-height: 167%;
+      @include transitionLink;
+      &:hover {
+        @include hoverLink;
+      }
+    }
+  }
+
+  &-presentation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    & > a:first-child {
+      font-weight: 600;
+      padding: 0.4em 0.8em;
+      border-radius: 8px;
+      border: 2px solid $main-color;
+      line-height: 167%;
+      @include transitionBgandColor;
+      &:hover {
+        @include hoverBgandcolor;
+      }
+    }
+
+    &__logo {
+      width: 230px;
+      height: 79px;
+      object-fit: cover;
+    }
+  }
+}

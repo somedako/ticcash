@@ -1,0 +1,536 @@
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  .header-nav {
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .header-nav a {
+    font-size: 0.7rem;
+  }
+
+  .header-btn {
+    max-width: 255px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+
+    &__text {
+      display: inline;
+    }
+    &__icon {
+      margin-right: 0.6em;
+    }
+  }
+
+  .banner__inner {
+    padding: 3.2em 5em;
+    height: max-content;
+  }
+
+  .banner-img {
+    right: 0;
+  }
+
+  .advantages__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantages .card {
+    max-width: 580px;
+  }
+
+  .spheres__inner {
+    padding: 3.2em 2.85em 4em 2.85em;
+  }
+
+  .spheres-items {
+    justify-content: space-around;
+  }
+
+  .spheres-item {
+    max-width: 260px;
+  }
+
+  .faq__inner {
+    padding: 3em 3.55em;
+  }
+
+  .promotions__inner {
+    padding: 4em 3.55em 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__inner {
+    gap: 35px;
+  }
+
+  .header-nav {
+    gap: 10px;
+  }
+
+  .header-btn__text {
+    font-size: 0.7rem;
+  }
+
+  .advantages__inner {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .advantages .card {
+    max-width: 866px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .header.open .header-nav {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+
+  .header__inner {
+    gap: 0;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    visibility: hidden;
+    justify-content: space-between;
+    position: absolute;
+    width: 320px;
+    min-height: 500px;
+    padding: 2em;
+    top: 0;
+    z-index: 10;
+    right: -320px;
+    background: $white;
+
+    &__close-btn {
+      display: block;
+    }
+
+    &__user-btn {
+      display: block;
+      &-icon {
+        display: inline;
+        vertical-align: middle;
+      }
+    }
+
+    &__logo {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .header-burger {
+    display: flex;
+    justify-content: end;
+    max-width: 50vw;
+    width: 100%;
+  }
+
+  .header-btn {
+    display: flex;
+    max-width: 140px;
+    &__text {
+      display: none;
+    }
+    &__icon {
+      position: static;
+    }
+  }
+
+  .banner__inner {
+    padding: 3.2em 2em 1.5em;
+  }
+
+  .banner-desc {
+    max-width: 489px;
+
+    &-title {
+      font-size: 2.4rem;
+    }
+
+    &-text {
+      font-size: 0.8em;
+      line-height: 137%;
+      max-width: 310px;
+    }
+  }
+
+  .banner-img {
+    max-width: 358px;
+    top: 75px;
+  }
+
+  .advantages {
+    margin-top: 2em;
+  }
+
+  .advantages .card {
+    max-width: 100%;
+  }
+
+  .advantages-btn {
+    margin: 2em auto 3em;
+  }
+
+  .spheres__inner {
+    padding: 3.2em 2em;
+  }
+
+  .spheres-title {
+    font-size: 2.4em;
+    line-height: 108%;
+  }
+
+  .spheres-items {
+    justify-content: center;
+  }
+
+  .spheres-item {
+    max-width: 390px;
+    text-align: center;
+  }
+
+  .how-work {
+    margin-top: 2em;
+
+    &-title {
+      font-size: 2.4em;
+      margin-bottom: 0;
+    }
+
+    &-items {
+      flex-wrap: wrap;
+    }
+
+    &-btn {
+      margin: 3em auto;
+    }
+  }
+
+  .info-item {
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+
+  .info-item-desc {
+    max-width: 640px;
+  }
+
+  .info-item-desc__title {
+    max-width: 640px;
+    margin: 0 0 0.7em 0;
+    font-size: 2.4em;
+  }
+
+  .info .light-cyan .info-item-desc {
+    max-width: 640px;
+  }
+
+  .info-btn {
+    margin: 2em auto 3em;
+  }
+
+  .info .lavender .info-item-desc__list li {
+    left: 22px;
+  }
+
+  .info .lavender .info-item-img {
+    order: 0;
+  }
+
+  .faq-link {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .faq__inner {
+    padding: 2em 1.55em;
+  }
+
+  .faq-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.7em;
+  }
+
+  .promotions {
+    border-radius: 0;
+  }
+
+  .promotions__inner {
+    padding: 2em 1.55em 0;
+  }
+
+  .promotions-title {
+    font-size: 2.4rem;
+    padding: 0;
+  }
+
+  .promotions-call__form {
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+
+    &-input {
+      height: 62px;
+    }
+  }
+
+  .promotions-img {
+    height: 261px;
+    object-fit: none;
+    bottom: -15px;
+  }
+
+  .promotions-timer__time-items {
+    gap: 25px;
+  }
+
+  .promotions-timer__time-items .time-count__divider {
+    font-size: 2.2rem;
+    line-height: 110%;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links {
+    gap: 29px;
+  }
+
+  .footer-presentation {
+    flex-direction: column;
+    gap: 31px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .container {
+    padding: 0;
+  }
+
+  .header__inner {
+    padding: 0 1em;
+    gap: 30px;
+  }
+
+  .header-btn {
+    max-width: 50px;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .banner__inner {
+    height: 100%;
+    max-height: 100%;
+    padding: 3.2em 1.2em 1.2em;
+    border-radius: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .banner-img {
+    position: static;
+  }
+
+  .banner-desc {
+    max-width: 100%;
+    text-align: left;
+    padding: 0 0.8em;
+
+    &-title {
+      font-size: 1.7rem;
+    }
+
+    &-text {
+      max-width: 100%;
+    }
+  }
+
+  .info-btn,
+  .how-work-btn,
+  .advantages-btn {
+    padding: 0 0.7em;
+  }
+
+  .btn-primary {
+    margin: 0 auto;
+    padding: 0.8em 1em;
+  }
+
+  .advantages .card-desc-title {
+    max-width: 216px;
+  }
+
+  .advantages .card {
+    padding: 1em;
+    height: 230px;
+    border-radius: 0;
+  }
+
+  .spheres__inner {
+    border-radius: 0;
+    padding: 3.2em 1em;
+  }
+
+  .spheres-title,
+  .faq-title,
+  .how-work-title,
+  .info-item-desc__title {
+    font-size: 1.5rem;
+  }
+
+  .spheres-items {
+    justify-content: center;
+  }
+
+  .spheres-item {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .info-item {
+    border-radius: 0;
+
+    &-img {
+      height: auto;
+    }
+  }
+
+  .info-item-desc__text {
+    font-size: 0.8rem;
+  }
+
+  .info-item-desc__list {
+    margin-left: 0;
+  }
+
+  .info .lavender .info-item-desc__list li {
+    left: 0;
+    font-size: 0.8rem;
+  }
+
+  .faq__inner {
+    padding: 2em 1em;
+    border-radius: 0;
+  }
+
+  .faq-link {
+    padding: 0.46em 0.2em;
+    font-size: 0.8rem;
+  }
+
+  .promotions__inner {
+    padding: 2em 0.5em 0;
+  }
+
+  .promotions-timer {
+    padding: 0.95em 0.5em;
+  }
+
+  .promotions-timer__title {
+    font-size: 0.8rem;
+  }
+
+  .promotions-timer__time-items {
+    gap: 10px;
+  }
+
+  .promotions-timer__time-items .time-count__divider {
+    font-size: 1.7rem;
+    line-height: 129%;
+  }
+
+  .promotions-timer__time-items .time-count__divider {
+    font-size: 1.6rem;
+    line-height: 135%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .header__inner {
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .header-burger {
+    width: 32vw;
+  }
+
+  .banner__inner {
+    padding: 3.2em 0.85em 1.2em;
+  }
+
+  .btn-primary {
+    padding: 0.6em;
+  }
+
+  .advantages .card-img {
+    right: 0;
+    bottom: -7px;
+  }
+
+  .advantages-btn,
+  .how-work-btn,
+  .info-btn {
+    max-width: 300px;
+  }
+
+  .faq-links {
+    margin: 0 auto 2.3em;
+  }
+
+  .faq-link {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .promotions__inner {
+    padding: 2em 1em 0;
+  }
+
+  .promotions-title {
+    font-size: 1.5rem;
+    line-height: 110%;
+  }
+
+  .promotions-timer__title {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .promotions-timer {
+    padding: 0.95em 0.2em;
+  }
+
+  .promotions-timer__time-items .time-count__item .time-count__value {
+    font-size: 2.7rem;
+  }
+
+  .promotions-timer__time-items {
+    gap: 10px;
+  }
+}

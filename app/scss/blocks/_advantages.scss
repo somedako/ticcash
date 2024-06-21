@@ -1,0 +1,50 @@
+.advantages {
+  margin-top: 4em;
+
+  &-btn {
+    margin: 4em auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 52px;
+  }
+
+  .card {
+    position: relative;
+    padding: 1.5em 2em 2em 2em;
+    max-width: 488px;
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    background-color: $lavender-blue;
+
+    &-desc {
+      position: relative;
+      z-index: 1;
+      max-width: 298px;
+
+      &-title {
+        width: 346px;
+        font-size: 1.4rem;
+      }
+
+      &-text {
+        color: $second-color;
+        font-weight: 400;
+        margin-top: 0.7em;
+        padding-right: 1.5em;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+    }
+  }
+}

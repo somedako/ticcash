@@ -1,0 +1,62 @@
+.spheres {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-cyan;
+    padding: 3.2em 4.85em 4em 4.85em;
+    border-radius: 16px;
+  }
+
+  &-title {
+    width: 100%;
+    max-width: 965px;
+    margin-bottom: 1em;
+    font-size: 2.8rem;
+    letter-spacing: 0.03em;
+    line-height: 107%;
+    text-align: center;
+    color: $main-color;
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &-item {
+    max-width: 20vw;
+    margin-bottom: 4em;
+    &-icon {
+      width: 120px;
+      height: 153px;
+      object-fit: cover;
+    }
+
+    &-title {
+      width: 100%;
+      max-width: 390px;
+      margin-bottom: 1em;
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 0.02em;
+      color: $second-color;
+    }
+
+    &-text {
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: $second-color;
+    }
+
+    &-link {
+      display: none;
+      &__icon {
+        width: 25px;
+        height: 16px;
+      }
+    }
+  }
+}
